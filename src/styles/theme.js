@@ -85,7 +85,7 @@ const theme = createMuiTheme({
       subTitle: {
         size: 1.5,
         sizeM: 1.8,
-        sizeL: 1.95,
+        sizeL: 1.2,
         weight: 300,
         lineHeight: 1.1
       },
