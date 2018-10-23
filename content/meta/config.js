@@ -6,7 +6,7 @@ module.exports = {
   siteDescription: "PersonalBlog is a GatsbyJS starter.",
   siteUrl: "https://gatsby-starter-personal-blog.greglobinski.com",
   pathPrefix: "",
-  siteImage: "head.jpg",
+  siteImage: "preview.jpg",
   siteLanguage: "en",
   // author
   authorName: "greg lobinski",
@@ -22,11 +22,11 @@ module.exports = {
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
   // contact
-  contactEmail: "john@doe.com",
+  contactEmail: "18766143990@163.com",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/greglobinski" },
-    { name: "twitter", url: "https://twitter.com/greglobinski" },
-    { name: "facebook", url: "http://facebook.com/greglobinski" }
+    { name: "github", url: "https://github.com/CrazyHante" }
+    // { name: "twitter", url: "https://twitter.com/greglobinski" },
+    // { name: "facebook", url: "http://facebook.com/greglobinski" }
   ]
 };
