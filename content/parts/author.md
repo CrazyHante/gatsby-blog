@@ -2,4 +2,4 @@
 title: author
 ---
 
-**Mr. Gatsby** Proin ornare ligula eu tellus tempus elementum. Aenean [bibendum](/) iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. :hearts:
+**Mr. Taurus** 登上顶峰的斗争本身足以充实人的心灵。无论处在哪种生活里，都希望你争取到一种通往更好生活的可能 :hearts:

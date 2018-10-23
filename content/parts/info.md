@@ -2,4 +2,4 @@
 title: info
 ---
 
-I am a front-end web developer. I used to be a web designer also, but now I concentrate on the code.
+人间所有的遭遇,一半是诗意,一半是苦难.你将经历沧桑,我已竭尽绵力.
