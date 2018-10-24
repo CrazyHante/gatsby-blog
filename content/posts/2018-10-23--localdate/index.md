@@ -2,7 +2,7 @@
 title: LocalDate,Date,String互转
 subTitle: java8新时间类
 category: "工具类"
-cover: 1.jpg
+cover: 1.png
 ---
 
 ```java
@@ -61,5 +61,6 @@ cover: 1.jpg
     // 取下一天：
     LocalDate firstDayOf2015 = lastDayOfThisMonth.plusDays(1); // 变成了2018-01-01
     // 取2017年1月第一个周一
-    LocalDate firstMondayOf2015 = LocalDate.parse("2017-01-01").with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY)); // 2017-01-02
+    LocalDate firstMondayOf2015 = LocalDate.parse("2017-01-01")
+        .with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY)); // 2017-01-02
 ```
