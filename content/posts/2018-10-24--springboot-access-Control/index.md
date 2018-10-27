@@ -1,7 +1,7 @@
 ---
 title: springboot跨域设置
 subTitle: springboot
-category: "工具类"
+category: java
 cover: 1.png
 ---
 

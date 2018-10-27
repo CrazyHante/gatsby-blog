@@ -1,6 +1,6 @@
 ---
 title: springboot获取部署jar包绝对路径
-category: "工具类"
+category: java
 cover: 1.png
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: windows端口占用
-category: windows
+category: 命令行
 cover: 3.png
 ---
 

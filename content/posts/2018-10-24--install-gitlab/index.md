@@ -1,8 +1,8 @@
 ---
 title: centos7安装部署gitlab服务器
 subTitle: 服务器
-category: linux
-cover: 2.png
+category: 教程
+cover: 4.png
 ---
 
 1. **安装相关依赖**
