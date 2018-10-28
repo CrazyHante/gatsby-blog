@@ -122,3 +122,7 @@ cover: 4.png
 ```
 
 ​	你会看到在重新下载所需要的依赖包，并生成一份新的package-lock.json。这里应该是依据package.json文件生成的。然后启动项目，done。
+
+------------
+
+> 参考：https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/
