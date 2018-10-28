@@ -1,5 +1,5 @@
 ---
-title: 关于我
+title: Freedom
 menuTitle: about me
 ---
 
