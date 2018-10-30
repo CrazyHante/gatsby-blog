@@ -1,5 +1,5 @@
 ---
-title: @RequestMapping用法
+title: RequestMapping用法
 subTitle: spring注解
 category: java
 cover: 1.png
