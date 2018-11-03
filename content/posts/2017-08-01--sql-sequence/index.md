@@ -1,5 +1,5 @@
 ---
-titile: 查询sql自增序列
+title: 查询sql自增序列
 subTitle: oracle
 category: Diary
 cover: 5.png

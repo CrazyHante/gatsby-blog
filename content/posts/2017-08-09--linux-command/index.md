@@ -1,7 +1,7 @@
 ---
 title: linux命令随记
 subTitle: linux
-category: Dialy
+category: Diary
 cover: 5.png
 ---
 
