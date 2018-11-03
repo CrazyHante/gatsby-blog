@@ -31,4 +31,3 @@ public static Object toBean(String json,Class beanClass) {
 >#### json全部为大写的时候 比如IDC 也会报错
 >
 >#### json首两位为大小也会报错 比如IDType
-

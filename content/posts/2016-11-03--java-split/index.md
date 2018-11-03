@@ -1,5 +1,5 @@
 ---
-title： split方法
+title: split方法
 subTitle: java
 category: Focus
 cover: 2.png
