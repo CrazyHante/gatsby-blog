@@ -1,7 +1,7 @@
 ---
 title: windows端口占用
-category: 命令行
-cover: 3.png
+category: Diary
+cover: diary.png
 ---
 
 1. netstat -aon|findstr "8080"
