@@ -1,6 +1,6 @@
 ---
 title: Freedom
-menuTitle: about me
+menuTitle: About
 ---
 
 > - To work  
