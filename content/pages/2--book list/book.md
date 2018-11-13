@@ -1,6 +1,6 @@
 ---
 title: 书单
-menuTitle: Book list
+menuTitle: book list
 ---
 
 > - [ ] 数学之美  <-----

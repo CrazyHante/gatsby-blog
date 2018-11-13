@@ -1,6 +1,6 @@
 ---
 title: 学习计划
-menuTitle: Plan
+menuTitle: plan
 ---
 
 -----------------------
