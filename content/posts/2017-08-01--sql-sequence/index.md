@@ -1,8 +1,8 @@
 ---
 title: 查询sql自增序列
 subTitle: oracle
-category: Diary
-cover: 5.png
+category: sql
+cover: sql.png
 ---
 
 查询自增序列:
