@@ -46,24 +46,13 @@ const Header = props => {
   return (
     <header className={classes.header}>
       <h1 className={classes.title}>{title}</h1>
-      {algolia && (
-        <a
-          className={classes.mark}
-          href="https://www.algolia.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <AlgoliaIcon />
-        </a>
-      )}
     </header>
   );
 };
 
 Header.propTypes = {
   classes: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired,
-  algolia: PropTypes.bool
+  title: PropTypes.string.isRequired
 };
 
 export default injectSheet(styles)(Header);

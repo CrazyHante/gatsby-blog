@@ -32,7 +32,6 @@ A ready to use, easy to customize [GatsbyJS](https://github.com/gatsbyjs/gatsby)
 - Comments (Facebook)
 - Post categories
 - Post list filtering
-- Full text searching (Algolia)
 - Contact form (Netlify form handling)
 - Material UI (@next)
 - RSS feed
