@@ -1,3 +1,10 @@
+---
+title: JVM垃圾收集续 G1收集器(五)
+subTitle: jvm整理
+category: java
+cover: java.png
+---
+
 jdk1.7之前,垃圾收集GC称为CMS. 
 
 堆被分解为较小的三个部分。具体分为：新生代、老年代、持久代。
