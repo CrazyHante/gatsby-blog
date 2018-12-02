@@ -19,7 +19,7 @@ cover: tool.png
 
 下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：
 
-![img](/clipboard.png)
+![img](./clipboard.png)
 
 
 

@@ -9,7 +9,7 @@ jdk1.7之前,垃圾收集GC称为CMS.
 
 堆被分解为较小的三个部分。具体分为：新生代、老年代、持久代。
 
-![img](/80fb87c0e368.png)
+![img](./80fb87c0e368.png)
 
 1. 绝大部分新生成的对象都放在Eden区，当Eden区将满，JVM会因申请不到内存，而触发Young GC ,进行Eden区+有对象的Survivor区(设为S0区)垃圾回收，把存活的对象用复制算法拷贝到一个空的Survivor(S1)中，此时Eden区被清空，另外一个Survivor S0也为空。下次触发Young GC回收Eden+S0，将存活对象拷贝到S1中。新生代垃圾回收简单、粗暴、高效。
 2. 若发现Survivor区满了，则将这些对象拷贝到old区或者Survivor没满但某些对象足够Old,也拷贝到Old区(每次Young GC都会使Survivor区存活对象值+1，直到阈值)。 3.Old区也会进行垃圾收集(Young GC),发生一次 Major GC 至少伴随一次Young GC，一般比Young GC慢十倍以上。
@@ -36,9 +36,9 @@ G1收集器
 
 G1的新生代收集跟ParNew类似，当新生代占用达到一定比例的时候，开始出发收集。
 
-![img](/2a60a46f0360.png)
+![img](./2a60a46f0360.png)
 
-![img](/f5c3e3a771e9.png)
+![img](./f5c3e3a771e9.png)
 
 被圈起的绿色部分为新生代的区域(region)，经过Young GC后存活的对象被复制到一个或者多个区域空闲中，这些被填充的区域将是新的新生代；当新生代对象的年龄(逃逸过一次Young GC年龄增加１)已经达到某个阈值(ParNew默认15)，被复制到老年代的区域中。
 
@@ -54,16 +54,16 @@ G1的新生代收集跟ParNew类似，当新生代占用达到一定比例的时
 2. Root Region Scanning，程序运行过程中会回收survivor区(存活到老年代)，这一过程必须在young GC之前完成。
 3. Concurrent Marking，在整个堆中进行并发标记(和应用程序并发执行)，此过程可能被young GC中断。在并发标记阶段，若发现区域对象中的所有对象都是垃圾，那个这个区域会被立即回收(图中打X)。同时，并发标记过程中，会计算每个区域的对象活性(区域中存活对象的比例)。
 
-![img](/b278aa6f7d5.jpeg)
+![img](./b278aa6f7d5.jpeg)
 
 1. Remark, 再标记，会有短暂停顿(STW)。再标记阶段是用来收集 并发标记阶段 产生新的垃圾(并发阶段和应用程序一同运行)；G1中采用了比CMS更快的初始快照算法:snapshot-at-the-beginning (SATB)。
 2. Copy/Clean up，多线程清除失活对象，会有STW。G1将回收区域的存活对象拷贝到新区域，清除Remember Sets，并发清空回收区域并把它返回到空闲区域链表中。
 
-![img](/d1289e25802.jpeg)
+![img](./d1289e25802.jpeg)
 
 1. 复制/清除过程后。回收区域的活性对象已经被集中回收到深蓝色和深绿色区域。
 
-![img](/f63b2b6239f.jpeg)
+![img](./f63b2b6239f.jpeg)
 
 关于Remembered Set概念：G1收集器中，Region之间的对象引用以及其他收集器中的新生代和老年代之间的对象引用是使用Remembered Set来避免扫描全堆。G1中每个Region都有一个与之对应的Remembered Set，虚拟机发现程序对Reference类型数据进行写操作时，会产生一个Write Barrier暂时中断写操作，检查Reference引用的对象是否处于不同的Region之间(在分代中例子中就是检查是否老年代中的对象引用了新生代的对象)，如果是便通过CardTable把相关引用信息记录到被引用对象所属的Region的Remembered Set中。当内存回收时，在GC根节点的枚举范围加入Remembered Set即可保证不对全局堆扫描也不会有遗漏。
 
