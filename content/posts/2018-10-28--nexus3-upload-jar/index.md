@@ -34,3 +34,6 @@ cover: 4.png
 
    -DrepositoryId  maven仓库名称 与权限service配置Id一致 
 
+3. 注意
+
+   如果jar包version带有SNAPSHOT字样,maven会认为这是快照版本,自动映射到SNAPSHOT库里,但是你如果没有配置SNAPSHOT库,会报错.. 
