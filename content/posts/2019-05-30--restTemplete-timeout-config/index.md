@@ -14,6 +14,7 @@ public class RestTempleteConfig{
     public RestTemplate customRestTemplate(){
         HttpComponentsClientHttpRequestFactory httpRequestFactory 
             = new HttpComponentsClientHttpRequestFactory();
+        
         httpRequestFactory.setConnectionRequestTimeout(3000);
         httpRequestFactory.setConnectTimeout(3000);
         httpRequestFactory.setReadTimeout(3000);
